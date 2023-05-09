@@ -1,4 +1,4 @@
-﻿namespace EntityFrameworkCore.Generator.Options;
+namespace EntityFrameworkCore.Generator.Options;
 
 /// <summary>
 /// View model mapper class options
@@ -16,7 +16,7 @@ public class MapperClassOptions : ClassOptionsBase
         Namespace = "{Project.Namespace}.Domain.Mapping";
         Directory = @"{Project.Directory}\Domain\Mapping";
 
-        BaseClass = "AutoMapper.Profile";
+        BaseClass = ""; //AutoMapper.Profile
         Name = "{Entity.Name}Profile";
     }
 

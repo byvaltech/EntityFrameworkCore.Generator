@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using EntityFrameworkCore.Generator.Extensions;
 using EntityFrameworkCore.Generator.Metadata.Generation;
@@ -247,7 +247,7 @@ public class CodeGenerator : ICodeGenerator
             ? "Updating object mapper class: {file}"
             : "Creating object mapper class: {file}", file);
 
-        var template = new MapperClassTemplate(entity, Options);
+        var template = new MapperlyClassTemplate(entity, Options);
         template.WriteCode(path);
     }
 
